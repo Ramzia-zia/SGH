@@ -26,13 +26,13 @@ export default function Login() {
     }
     setLoading(true);
     setTimeout(() => {
-      if (form.email === "patient@Clinique Santé Togo.tg" && form.password === "123456") {
+      if (form.email === "patient@gmail.com" && form.password === "123456") {
         login({ nom: "Koami Atsou", email: form.email, role: "patient" });
         navigate(ROUTES.PATIENT_DASHBOARD);
-      } else if (form.email === "medecin@Clinique Santé Togo.tg" && form.password === "123456") {
+      } else if (form.email === "medecin@gmail.com" && form.password === "123456") {
         login({ nom: "Dr. Mensah", email: form.email, role: "medecin" });
         navigate(ROUTES.MEDECIN_DASHBOARD);
-      } else if (form.email === "admin@Clinique Santé Togo.tg" && form.password === "123456") {
+      } else if (form.email === "admin@gmail.com" && form.password === "123456") {
         login({ nom: "Administrateur", email: form.email, role: "admin" });
         navigate(ROUTES.ADMIN_DASHBOARD);
       } else {
@@ -68,9 +68,9 @@ export default function Login() {
           {/* Comptes de test */}
           <div className="mb-6 p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 text-xs text-slate-600 dark:text-slate-400">
             <p className="font-semibold text-blue-600 dark:text-sky-400 mb-1">Comptes de test :</p>
-            <p>👤 patient@Clinique Santé Togo.tg / 123456</p>
-            <p>🩺 medecin@Clinique Santé Togo.tg / 123456</p>
-            <p>🔧 admin@Clinique Santé Togo.tg / 123456</p>
+            <p>👤 patient@gmail.com / 123456</p>
+            <p>🩺 medecin@gmail.com / 123456</p>
+            <p>🔧 admin@gmail.com / 123456</p>
           </div>
 
           {error && (
